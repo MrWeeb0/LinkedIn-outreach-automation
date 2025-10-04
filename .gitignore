@@ -3,8 +3,10 @@
 
 # Logs and data
 data/logs.csv
+data/connections.csv
 data/session.pkl
 *.log
+data/
 
 # Python
 __pycache__/
