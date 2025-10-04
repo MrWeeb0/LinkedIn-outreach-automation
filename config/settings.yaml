@@ -1,0 +1,28 @@
+linkedin:
+  limits:
+    daily_messages: 50
+    session_messages: 10
+    max_connections: 10
+    retry_attempts: 3
+    
+messaging:
+  templates:
+    - "Hi {first_name},\n\nI'm Jorge from The Argos Initiative. We help startups create strategic intelligence briefs for investor conversations and competitive positioning.\n\nI noticed your activity in this area and was curious about your current approach to investor preparation.\n\nThe Challenge We Address:\nMany founders struggle to distill complex market dynamics into compelling investor narratives that truly resonate.\n\nWhat I'd Like to Share:\nCould we spend 15 minutes reviewing our methodology? I'd be happy to share a sanitized example of our work and get your perspective on its potential value.\n\nNext Steps:\nYou can schedule a meeting whenever it's convenient:\n📅 https://calendly.com/chiricag72/the-argos-initiative-\n\nBest regards,\nJorge\nThe Argos Initiative"
+  
+  delays:
+    min_seconds: 30
+    max_seconds: 120
+    typing_speed_chars_per_second: 5
+    page_load_min: 2
+    page_load_max: 5
+    
+logging:
+  level: "INFO"
+  export_format: "csv"
+  log_file: "data/logs.csv"
+  
+safety:
+  enable_circuit_breaker: true
+  max_consecutive_failures: 3
+  pause_on_detection: true
+  detection_pause_seconds: 300
